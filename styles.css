@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    min-height: 100vh;
+}
+
+nav {
+    width: 475px;
+    height: 50px;
+    background: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.1em;
+    color: yellow;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: aqua;
+}
+
+header {
+    background: blanchedalmond;
+    color: black;
+    padding-top: 30px;
+    min-height: 100px;
+    border-bottom: 3px solid black;
+}
+
+header h1 {
+    text-align: left;
+    padding-left: 80px;
+    margin: 0;
+}
+
+.cont nav {
+    float: right;
+}
+
+.cont {
+    padding-bottom: 50px;
+    background-size: 60px;
+    background-position: left;
+}
+
+.cont h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.hero {
+    background: url('1.jpg') no-repeat left/320px;
+    color: black;
+    padding: 100px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: grey;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.scholarships {
+    padding: 50px 0;
+    background: lightblue;
+    text-align: center;
+}
+
+.scholarship-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.scholarship-item {
+    background: lightgoldenrodyellow;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.scholarship-item .btn {
+    background: lightseagreen;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.apply {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.apply form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.apply label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.apply input, .apply select, .apply textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.apply button {
+    background: lightblue;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply button:hover {
+    background: lightgreen;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}

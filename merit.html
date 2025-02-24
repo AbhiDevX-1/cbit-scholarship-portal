@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merit-Based Scholarship Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Merit-Based Scholarship Application</h1>
+            <a href="pro.html" class="btn">Back to Home</a>
+        </div>
+    </header>
+
+    <section class="apply">
+        <div class="container">
+            <h2>Upload Merit Certificates</h2>
+            <form action="submit_merit.php" method="post" enctype="multipart/form-data">
+                <label for="cgpa">Current CGPA:</label>
+                <input type="text" id="cgpa" name="cgpa" required>
+
+                <label for="transcript">Upload Memo :</label>
+                <input type="file" id="transcript" name="transcript" accept=".pdf,.jpg,.png" required>
+
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

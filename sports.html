@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Scholarship Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sports Scholarship Application</h1>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </header>
+
+    <section class="apply">
+        <div class="container">
+            <h2>Upload Sports Achievements</h2>
+            <form action="submit_sports.php" method="post" enctype="multipart/form-data">
+                <label for="sport">Sport:</label>
+                <input type="text" id="sport" name="sport" required>
+
+                <label for="level">Competition Level:</label>
+                <select id="level" name="level" required>
+                    <option value="state">State Level</option>
+                    <option value="national">National Level</option>
+                    <option value="international">International Level</option>
+                </select>
+
+                <label for="certificate">Upload Sports Certificate:</label>
+                <input type="file" id="certificate" name="certificate" accept=".pdf,.jpg,.png" required>
+
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

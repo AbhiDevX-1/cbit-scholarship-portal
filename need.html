@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Need-Based Scholarship Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Need-Based Scholarship Application</h1>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </header>
+
+    <section class="apply">
+        <div class="container">
+            <h2>Upload Financial Proof</h2>
+            <form action="submit_need.php" method="post" enctype="multipart/form-data">
+                <label for="income">Annual Family Income (in ₹):</label>
+                <input type="number" id="income" name="income" required>
+
+                <label for="income_certificate">Upload Income Certificate:</label>
+                <input type="file" id="income_certificate" name="income_certificate" accept=".pdf,.jpg,.png" required>
+
+                <label for="financial_essay">Describe Your Financial Condition:</label>
+                <textarea id="financial_essay" name="financial_essay" rows="5" cols="50" placeholder="Explain your financial situation..." required></textarea>
+
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

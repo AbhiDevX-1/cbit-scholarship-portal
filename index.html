@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBIT Scholarship Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="cont">
+            <div class="container">
+                <h1>CBIT SCHOLARSHIP PORTAL</h1>
+                <nav>
+                    <a href="#home">Home<span></span></a>
+                    <a href="#scholarships">Scholarships<span></span></a>
+                    <a href="#apply">Apply<span></span></a>
+                    <a href="#contact">Contact<span></span></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="background"></div>
+        <div class="container">
+            <h2>Welcome to the CBIT Scholarship Portal</h2>
+            <p><strong>Explore and apply for various scholarships offered by CBIT.</strong></p>
+            <a href="#scholarships" class="btn">View Scholarships</a>
+        </div>
+    </section>
+
+    <section id="scholarships" class="scholarships">
+        <div class="container">
+            <h2><strong>Available Scholarships</strong></h2>
+            <div class="scholarship-list">
+                <div class="scholarship-item">
+                    <h3>Merit-Based Scholarship</h3>
+                    <p>Awarded to students with outstanding academic performance. Minimum CGPA: 9.0</p>
+                    <a href="#apply" class="btn">Apply Now</a>
+                </div>
+                <div class="scholarship-item">
+                    <h3>Need-Based Scholarship</h3>
+                    <p>For students requiring financial assistance. Family income must be below ₹3,00,000 per year.</p>
+                    <a href="#apply" class="btn">Apply Now</a>
+                </div>
+                <div class="scholarship-item">
+                    <h3>Sports Scholarship</h3>
+                    <p>Available for students excelling in state/national-level sports competitions.</p>
+                    <a href="#apply" class="btn">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply" class="apply">
+        <div class="container">
+            <h2>Apply for Scholarship</h2>
+            <form id="scholarshipForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="adm">Admission Number:</label>
+                <input type="text" id="adm" name="adm" required>
+
+                <label for="scholarship">Select Scholarship:</label>
+                <select id="scholarship" name="scholarship" required>
+                    <option value="merit">Merit-Based Scholarship</option>
+                    <option value="need">Need-Based Scholarship</option>
+                    <option value="sports">Sports Scholarship</option>
+                </select>
+
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> scholarships@cbit.ac.in</p>
+            <p><strong>Phone:</strong> +91 123 456 7890</p>
+            <p>&copy; 2025 CBIT Scholarship Portal</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
